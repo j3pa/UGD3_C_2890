@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
             msgError.textContent = "Username atau Password Tidak Boleh Kosong";
             position.after(msgError);
         } else {
-            window.open("https://www.uajy.ac.id/");
+            window.open("http://instagram.com/zefnychs/");
         }
     })
 } )

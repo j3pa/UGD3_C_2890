@@ -18,10 +18,11 @@ body {
     background-color: #fff;
     margin-top: 100px;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     width: 300px;
     transition: background 0.3s ease-in-out;
+    
 }
 
 .signin-form {
@@ -35,6 +36,21 @@ body {
     transition: background 0.3s ease-in-out;
 }
 
+.garis {
+    border: 0;
+    border-top: 1px solid #ccc; 
+    margin: 15px 0;
+}
+
+label {
+    display: block;      
+    text-align: left;    
+    font-weight: bold;   
+    font-size: 13px;
+    margin-top: 10px;
+    margin-left: 15px;  
+}
+    
 h5 {
     text-align: left;
     margin-left: 10px;
@@ -65,6 +81,3 @@ button:hover {
     background-color: #32c93c;
 }
 
-.signin-form:hover {
-    background-color: #f0f0f0;
-}
