@@ -13,6 +13,17 @@ body {
     background-size: cover;
 }
 
+.card-form {
+    margin: 0 auto;
+    background-color: #fff;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    transition: background 0.3s ease-in-out;
+}
+
 .signin-form {
     margin: 0 auto;
     background-color: #fff;
