@@ -19,19 +19,36 @@ document.addEventListener("DOMContentLoaded", function () {
             msgError.style.textAlign = "left";
             msgError.textContent = "Username atau Password Tidak Boleh Kosong";
             position.after(msgError);
+            return;
+        }
         
         if (pass.length < 8) {
-            error.innerHTML("Password harus memiliki minimal 8 karakter");
+            let msgError = document.createElement("p");
+            msgError.id = "msgError";
+            msgError.style.color = "red";
+            msgError.style.fontSize = "12px";
+            msgError.style.marginLeft = "5px";
+            msgError.style.textAlign = "left";
+            msgError.textContent = "Password harus memiliki minimal 8 karakter";
+            position.after(msgError);
+            errorBefore.remove();
             return;
         }
 
-        if (pass.length > 17) {
-            error.innerHTML("Password harus memiliki maksimal 17 karakter");
+        if (pass.length > 16) {
+            let msgError = document.createElement("p");
+            msgError.id = "msgError";
+            msgError.style.color = "red";
+            msgError.style.fontSize = "12px";
+            msgError.style.marginLeft = "5px";
+            msgError.style.textAlign = "left";
+            msgError.textContent = "Password harus memiliki maksimal 16 karakter";
+            position.after(msgError);
+            errorBefore.remove();
             return;
-        }
-        
         } else {
             window.open("http://instagram.com/zefnychs/");
+    
         }
         
     })
