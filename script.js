@@ -19,8 +19,20 @@ document.addEventListener("DOMContentLoaded", function () {
             msgError.style.textAlign = "left";
             msgError.textContent = "Username atau Password Tidak Boleh Kosong";
             position.after(msgError);
+        
+        if (pass.length < 8) {
+            error.innerHTML("Password harus memiliki minimal 8 karakter");
+            return;
+        }
+
+        if (pass.length > 17) {
+            error.innerHTML("Password harus memiliki maksimal 17 karakter");
+            return;
+        }
+        
         } else {
             window.open("http://instagram.com/zefnychs/");
         }
+        
     })
 } )
